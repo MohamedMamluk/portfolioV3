@@ -13,6 +13,13 @@ const routes: Routes = [
         (m) => m.AboutModule
       ),
   },
+  {
+    path: 'projects',
+    loadChildren: () =>
+      import('src/app/Components/Projects/projects.module').then(
+        (m) => m.ProjectsModule
+      ),
+  },
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 <header
-  id="mobile__header"
+  id="mobile__header-close"
   class="flex items-center justify-between px-4 py-5 text-lg border-b border-b-[#1E2D3D]"
 >
   <h1 class="">mohamed-mamluk</h1>
@@ -12,17 +12,30 @@
 <div id="monile__menu" *ngIf="isMenuOpen" class="fixed inset-0 z-10 bg-mainBG">
   <div
     class="px-4 flex py-5 text-lg border-b border-b-[#1E2D3D] items-center justify-between"
+    id="mobile__header-open"
   >
     <h1 class="">mohamed-mamluk</h1>
     <div class="w-[18px]" (click)="toggleMenu()">X</div>
   </div>
-  <div>
-    <a
-      class="block px-4 text-mainWhite py-5 text-lg border-b border-b-[#1E2D3D]"
-      *ngFor="let item of items"
-      (click)="toggleMenu()"
-      [routerLink]="item.path"
-      >{{ item.name }}</a
-    >
+  <div class="flex flex-col justify-between h-[90%]">
+    <div>
+      <a
+        class="block px-4 text-mainWhite py-5 text-lg border-b border-b-[#1E2D3D]"
+        *ngFor="let item of items"
+        (click)="toggleMenu()"
+        [routerLink]="item.path"
+        >{{ item.name }}</a
+      >
+    </div>
+    <footer class="flex border-t border-[#1E2D3D] items-center">
+      <div class="w-1/2">
+        <h2>Find me on:</h2>
+      </div>
+      <div class="w-1/2 flex justify-between items-center">
+        <span class="border-l border-[#1E2D3D] w-1/3 py-2">F</span>
+        <span class="border-l border-[#1E2D3D] w-1/3 py-2">T</span>
+        <span class="border-l border-[#1E2D3D] w-1/3 py-2">G</span>
+      </div>
+    </footer>
   </div>
 </div>

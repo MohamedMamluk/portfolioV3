@@ -1,0 +1,28 @@
+<header
+  id="mobile__header"
+  class="flex items-center justify-between px-4 py-5 text-lg border-b border-b-[#1E2D3D]"
+>
+  <h1 class="">mohamed-mamluk</h1>
+  <div class="w-[18px]" (click)="toggleMenu()">
+    <span class="w-full block h-0.5 bg-mainGray mb-1"></span>
+    <span class="w-full block h-0.5 bg-mainGray mb-1"></span>
+    <span class="w-full block h-0.5 bg-mainGray"></span>
+  </div>
+</header>
+<div id="monile__menu" *ngIf="isMenuOpen" class="fixed inset-0 z-10 bg-mainBG">
+  <div
+    class="px-4 flex py-5 text-lg border-b border-b-[#1E2D3D] items-center justify-between"
+  >
+    <h1 class="">mohamed-mamluk</h1>
+    <div class="w-[18px]" (click)="toggleMenu()">X</div>
+  </div>
+  <div>
+    <a
+      class="block px-4 text-mainWhite py-5 text-lg border-b border-b-[#1E2D3D]"
+      *ngFor="let item of items"
+      (click)="toggleMenu()"
+      [routerLink]="item.path"
+      >{{ item.name }}</a
+    >
+  </div>
+</div>

@@ -10,6 +10,7 @@ module.exports = {
         mainPink: "#E99287",
         mainWhite: "#E5E9F0",
         mainGray: "#607B96",
+        mainOrange: "#FEA55F",
       },
     },
   },

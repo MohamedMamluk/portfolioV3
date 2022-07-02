@@ -10,3 +10,7 @@
     color: #607b96;
   }
 }
+
+.active_link {
+  @apply text-mainWhite  border-b-mainOrange border-b-2;
+}

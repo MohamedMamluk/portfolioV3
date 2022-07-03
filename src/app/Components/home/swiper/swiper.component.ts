@@ -21,7 +21,14 @@ export class SwiperComponent implements OnInit {
   slides$ = new BehaviorSubject<string[]>(['']);
 
   constructor() {
-    this.slides = ['angular-logo', 'React_logo', 'next-logo'];
+    this.slides = [
+      'angular-logo',
+      'React_logo',
+      'next-logo',
+      'typescript',
+      'graph',
+      'apollo',
+    ];
   }
 
   ngOnInit(): void {

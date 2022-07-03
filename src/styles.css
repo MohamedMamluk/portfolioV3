@@ -14,3 +14,51 @@
 .active_link {
   @apply text-mainWhite  border-b-mainOrange border-b-2;
 }
+#blue {
+  position: absolute;
+  width: 255.65px;
+  height: 277.05px;
+  left: 175.42px;
+  top: 30%;
+
+  background: #4d5bce;
+  opacity: 0.4;
+  filter: blur(150px);
+  transform: rotate(13.51deg);
+}
+#green {
+  position: absolute;
+  width: 255.65px;
+  height: 277.05px;
+  left: 4.19px;
+  top: 10%;
+
+  background: #43d9ad;
+  opacity: 0.4;
+  filter: blur(150px);
+  transform: rotate(-94.3deg);
+}
+#blue-right {
+  position: absolute;
+  width: 255.65px;
+  height: 277.05px;
+  right: 205.42px;
+  top: 10%;
+
+  background: #4d5bce;
+  opacity: 0.4;
+  filter: blur(150px);
+  transform: rotate(13.51deg);
+}
+#green-right {
+  position: absolute;
+  width: 255.65px;
+  height: 277.05px;
+  right: 4.19px;
+  top: 20%;
+
+  background: #43d9ad;
+  opacity: 0.4;
+  filter: blur(150px);
+  transform: rotate(-94.3deg);
+}

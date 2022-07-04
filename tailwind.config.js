@@ -11,6 +11,7 @@ module.exports = {
         mainWhite: "#E5E9F0",
         mainGray: "#607B96",
         mainOrange: "#FEA55F",
+        secondaryGray: "#1E2D3D",
       },
     },
   },

@@ -1,0 +1,15 @@
+<div
+  class="flex items-center px-3 gap-2 py-1 text-mainWhite bg-secondaryGray group cursor-pointer select-none"
+  (click)="toggleTap()"
+>
+  <span class="transition-all" [ngClass]="{ 'rotate-90': tapOpen }">></span>
+  <p>{{ tapInfo.tapName }}</p>
+</div>
+<div class="ml-6" [ngClass]="{ hidden: !tapOpen }">
+  <a
+    class="block select-none"
+    routerLink="/about/{{ tapInfo.as }}/{{ item }}"
+    *ngFor="let item of tapInfo.tapDropdownItems"
+    >{{ item }}</a
+  >
+</div>

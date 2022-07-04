@@ -1,1 +1,5 @@
-<p class="text-mainGray">main works!</p>
+<main class="py-3">
+  <h1 class="text-mainWhite text-lg ml-3 my-3">_about-me</h1>
+  <app-dropdown *ngFor="let tap of taps" [tapInfo]="tap"></app-dropdown>
+</main>
+<router-outlet></router-outlet>

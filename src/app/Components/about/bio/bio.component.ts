@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AboutMeService } from 'src/app/Services/about-me.service';
 
 @Component({
   selector: 'app-bio',
@@ -7,7 +8,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./bio.component.css'],
 })
 export class BioComponent implements OnInit {
-  constructor() {}
+  bio: string[];
+  constructor(private aboutmeData: AboutMeService) {
+    this.bio = this.aboutmeData.bio;
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.bio);
+  }
 }

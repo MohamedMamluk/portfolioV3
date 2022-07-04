@@ -1,1 +1,22 @@
-<p>bio works!</p>
+<div class="text-mainGray px-2 space-y-4">
+  <h1 class="text-mainWhite">
+    // personal-info <span class="text-mainGray">/ bio</span>
+  </h1>
+
+  <div class="">
+    <div class="flex gap-4">
+      <span class="hidden lg:block">1</span>
+      <span>/**</span>
+    </div>
+    <div *ngFor="let line of bio; let i = index" class="flex gap-6">
+      <span class="hidden lg:block">{{ i + 2 }}</span>
+      <p class="flex gap-2">
+        <span class="hidden lg:block">* </span> <span>{{ line }}</span>
+      </p>
+    </div>
+    <div class="flex gap-4">
+      <span class="hidden lg:block">10</span>
+      <span>**/</span>
+    </div>
+  </div>
+</div>

@@ -12,7 +12,23 @@ export class MainComponent implements OnInit {
     this.taps = [
       {
         tapName: 'personal-info',
-        tapDropdownItems: ['bio', 'interests', 'education'],
+        tapDropdownItems: [
+          {
+            tapName: 'bio',
+            tapIcon: 'folder',
+            tapIconColor: 'mainPink',
+          },
+          {
+            tapName: 'interests',
+            tapIcon: 'folder',
+            tapIconColor: 'mainGreen',
+          },
+          {
+            tapName: 'education',
+            tapIcon: 'folder',
+            tapIconColor: 'mainBlue',
+          },
+        ],
         as: 'personal',
       },
     ];

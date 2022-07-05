@@ -9,6 +9,7 @@
   <a
     class="flex items-center gap-1 my-1 select-none"
     routerLink="/about/{{ tapInfo.as }}/{{ item.tapName }}"
+    routerLinkActive="text-mainWhite"
     (click)="toggleTap()"
     *ngFor="let item of tapInfo.tapDropdownItems"
     ><mat-icon class="text-{{ item.tapIconColor }}">{{

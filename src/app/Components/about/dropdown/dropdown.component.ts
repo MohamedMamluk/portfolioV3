@@ -8,7 +8,7 @@ import { TapInfo } from 'src/app/Modules/tap-info';
 })
 export class DropdownComponent implements OnInit {
   @Input() tapInfo: TapInfo = {} as TapInfo;
-  tapOpen: boolean = false;
+  tapOpen: boolean = true;
   constructor() {}
 
   ngOnInit(): void {}

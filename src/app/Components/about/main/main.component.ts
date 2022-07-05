@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TapInfo } from 'src/app/Modules/tap-info';
 
 @Component({
@@ -8,7 +9,7 @@ import { TapInfo } from 'src/app/Modules/tap-info';
 })
 export class MainComponent implements OnInit {
   taps: TapInfo[];
-  constructor() {
+  constructor(private router: Router) {
     this.taps = [
       {
         tapName: 'personal-info',
@@ -34,5 +35,7 @@ export class MainComponent implements OnInit {
     ];
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.router.navigateByUrl('about/personal/bio');
+  }
 }

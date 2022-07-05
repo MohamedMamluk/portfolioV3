@@ -4,7 +4,6 @@ import { MainComponent } from './main/main.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { BioComponent } from './bio/bio.component';
 import { AboutRoutingModule } from './about-routing.module';
-import { InterestsComponent } from './interests/interests.component';
 import { EducationComponent } from './education/education.component';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -13,7 +12,6 @@ import { MatIconModule } from '@angular/material/icon';
     MainComponent,
     DropdownComponent,
     BioComponent,
-    InterestsComponent,
     EducationComponent,
   ],
   imports: [CommonModule, AboutRoutingModule, MatIconModule],

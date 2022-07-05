@@ -20,11 +20,6 @@ export class MainComponent implements OnInit {
             tapIconColor: 'mainPink',
           },
           {
-            tapName: 'interests',
-            tapIcon: 'folder',
-            tapIconColor: 'mainGreen',
-          },
-          {
             tapName: 'education',
             tapIcon: 'folder',
             tapIconColor: 'mainBlue',

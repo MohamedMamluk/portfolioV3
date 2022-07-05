@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { Education } from 'src/app/Modules/about-me';
+import { AboutMeService } from 'src/app/Services/about-me.service';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  styleUrls: ['./education.component.css'],
 })
 export class EducationComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  education: Education[] = [];
+  constructor(private aboutMeService: AboutMeService) {
+    this.education = this.aboutMeService.education;
   }
 
+  ngOnInit(): void {
+    console.log(this.education);
+  }
 }

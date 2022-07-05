@@ -72,6 +72,6 @@ export class AboutMeService {
     return this.aboutme.bio.split(',');
   }
   get education() {
-    return this.aboutme.education.reverse();
+    return this.aboutme.education;
   }
 }

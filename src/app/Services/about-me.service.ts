@@ -17,35 +17,11 @@ export class AboutMeService {
       I am open to work`,
       education: [
         {
-          educationType: 'Bachelor of Accountancy',
-          place: 'Cairo University',
+          educationType: 'Web development using Angular',
+          place: 'ITI Material',
           duration: {
-            from: 'Sept 2015',
-            to: 'May 2019',
-          },
-        },
-        {
-          educationType: 'Web Development Challenger course',
-          place: 'Udacity-FWD',
-          duration: {
-            from: 'July 2020',
-            to: 'September 2020',
-          },
-        },
-        {
-          educationType: 'Programming with JavaScript',
-          place: 'Coursera',
-          duration: {
-            from: 'October 2020',
-            to: 'December 2020',
-          },
-        },
-        {
-          educationType: 'React Tutorial and Projects Course',
-          place: 'udemy',
-          duration: {
-            from: 'January 2021',
-            to: 'February 2021',
+            from: 'May 2022',
+            to: 'June 2022',
           },
         },
 
@@ -58,11 +34,35 @@ export class AboutMeService {
           },
         },
         {
-          educationType: 'Web development using Angular',
-          place: 'ITI Material',
+          educationType: 'React Tutorial and Projects Course',
+          place: 'udemy',
           duration: {
-            from: 'May 2022',
-            to: 'June 2022',
+            from: 'January 2021',
+            to: 'February 2021',
+          },
+        },
+        {
+          educationType: 'Programming with JavaScript',
+          place: 'Coursera',
+          duration: {
+            from: 'October 2020',
+            to: 'December 2020',
+          },
+        },
+        {
+          educationType: 'Web Development Challenger course',
+          place: 'Udacity-FWD',
+          duration: {
+            from: 'July 2020',
+            to: 'September 2020',
+          },
+        },
+        {
+          educationType: 'Bachelor of Accountancy',
+          place: 'Cairo University',
+          duration: {
+            from: 'Sept 2015',
+            to: 'May 2019',
           },
         },
       ],

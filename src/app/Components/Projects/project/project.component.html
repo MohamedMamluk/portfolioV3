@@ -1,0 +1,38 @@
+<div id="project-wrapper" class="max-w-sm h-96">
+  <div id="project-title" class="flex gap-2 h-[10%]">
+    <h2 class="text-mainBlue">{{ projectData.title }}</h2>
+    <h3 class="text-mainGray">/ _{{ projectData.secondaryTitle }}</h3>
+  </div>
+  <div
+    id="project-content"
+    class="h-[90%] border border-secondaryGray bg-[#011221] rounded-lg overflow-hidden"
+  >
+    <div id="project-image" class="h-1/2 rounded-lg relative">
+      <img
+        src="assets/react-mini.png"
+        class="absolute right-4 top-4 w-7 h-7 border border-mainBG rounded-md"
+        alt=""
+      />
+      <img
+        [src]="projectData.image"
+        [alt]="projectData.title"
+        class="w-full h-full object-cover rounded-tr-lg rounded-tl-lg"
+      />
+    </div>
+    <div
+      id="project-data"
+      class="flex flex-col justify-evenly items-start h-1/2 px-5 border-t border-secondaryGray"
+    >
+      <p class="text-mainGray">
+        {{ projectData.description.slice(0, 65) }}
+        <span *ngIf="projectData.description.length > 65">...</span>
+      </p>
+      <a
+        [href]="projectData.link"
+        class="bg-secondaryGray text-mainWhite p-2 rounded-md"
+        target="_blank"
+        >view-project</a
+      >
+    </div>
+  </div>
+</div>

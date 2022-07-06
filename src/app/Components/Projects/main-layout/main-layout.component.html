@@ -1,1 +1,11 @@
-<p>main-layout works!</p>
+<div class="container mx-auto">
+  <h1 class="text-mainWhite text-lg ml-3 my-3">_projects</h1>
+  <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 px-4">
+    <app-project
+      *ngFor="let project of projects"
+      [projectData]="project"
+    ></app-project>
+  </div>
+</div>
+<!-- <a routerLink="/vue">go to vue</a>
+<router-outlet></router-outlet> -->

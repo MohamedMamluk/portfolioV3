@@ -1,18 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AppRoutingModule } from 'src/app/app-routing.module';
-import { RouterModule, Routes } from '@angular/router';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { VueComponent } from './vue/vue.component';
+import { ProjectsRoutingModule } from './projects-routing.module';
+import { ProjectComponent } from './project/project.component';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: MainLayoutComponent,
-  },
-];
 @NgModule({
-  declarations: [MainLayoutComponent],
-  imports: [CommonModule, RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  declarations: [MainLayoutComponent, VueComponent, ProjectComponent],
+  imports: [CommonModule, ProjectsRoutingModule],
 })
 export class ProjectsModule {}

@@ -1,0 +1,33 @@
+<div
+  class="flex items-center pl-3 gap-2 py-2 text-mainWhite group cursor-pointer select-none border-b border-secondaryGray"
+  (click)="toggleTap()"
+>
+  <span class="transition-all" [ngClass]="{ 'rotate-90': tapOpen }">></span>
+  <p>projects</p>
+</div>
+<div class="ml-6" [ngClass]="{ hidden: !tapOpen }">
+  <div class="flex items-center gap-2 text-lg">
+    <input type="checkbox" name="framework" id="react-checkbox" /><label
+      class="flex items-center"
+      for="react-checkbox"
+      ><img src="assets/react-icon.png" class="w-5 h-5" alt="" /> React</label
+    >
+  </div>
+  <div class="flex items-center gap-2 text-lg">
+    <input
+      type="checkbox"
+      name="framework"
+      id="angular-checkbox"
+      disabled
+    /><label for="angular-checkbox" class="flex items-center"
+      ><img src="assets/vue-icon.png" class="w-5 h-5" alt="" /> Angular</label
+    >
+  </div>
+  <div class="flex items-center gap-2 text-lg">
+    <input type="checkbox" name="framework" id="vue-checkbox" disabled /><label
+      class="flex items-center"
+      for="vue-checkbox"
+      ><img src="assets/angular-icon.png" class="w-5 h-5" alt="" /> Vue</label
+    >
+  </div>
+</div>

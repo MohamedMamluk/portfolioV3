@@ -1,11 +1,19 @@
-<div class="container mx-auto">
-  <h1 class="text-mainWhite text-lg ml-3 my-3">_projects</h1>
-  <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 px-4">
-    <app-project
-      *ngFor="let project of projects"
-      [projectData]="project"
-    ></app-project>
+<main class="lg:flex container">
+  <h1 class="text-mainWhite text-lg ml-3 my-3 lg:hidden">_projects</h1>
+  <div class="lg:w-1/4 border-r border-secondaryGray lg:h-[calc(100vh-7rem)]">
+    <app-dropdown></app-dropdown>
   </div>
-</div>
-<!-- <a routerLink="/vue">go to vue</a>
-<router-outlet></router-outlet> -->
+  <div class="lg:w-3/4">
+    <div class="h-10 border-b border-secondaryGray hidden lg:block">
+      <div
+        class="border border-secondaryGray w-max px-2 py-1 h-full text-mainGray"
+      >
+        React; <span>x</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 px-4 mt-2">
+      <app-project *ngFor="let project of projects" [projectData]="project">
+      </app-project>
+    </div>
+  </div>
+</main>

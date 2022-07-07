@@ -7,7 +7,7 @@
 </div>
 <div class="ml-6" [ngClass]="{ hidden: !tapOpen }">
   <div class="flex items-center gap-2 text-lg">
-    <input type="checkbox" name="framework" id="react-checkbox" /><label
+    <input type="checkbox" name="framework" id="react-checkbox" checked /><label
       class="flex items-center"
       for="react-checkbox"
       ><img src="assets/react-icon.png" class="w-5 h-5" alt="" /> React</label
@@ -20,14 +20,16 @@
       id="angular-checkbox"
       disabled
     /><label for="angular-checkbox" class="flex items-center"
-      ><img src="assets/vue-icon.png" class="w-5 h-5" alt="" /> Angular</label
+      ><img src="assets/vue-icon.png" class="w-5 h-5" alt="" /> Angular
+      <span class="ml-4">//soon</span></label
     >
   </div>
   <div class="flex items-center gap-2 text-lg">
     <input type="checkbox" name="framework" id="vue-checkbox" disabled /><label
       class="flex items-center"
       for="vue-checkbox"
-      ><img src="assets/angular-icon.png" class="w-5 h-5" alt="" /> Vue</label
+      ><img src="assets/angular-icon.png" class="w-5 h-5" alt="" /> Vue
+      <span class="ml-4">//soon</span></label
     >
   </div>
 </div>

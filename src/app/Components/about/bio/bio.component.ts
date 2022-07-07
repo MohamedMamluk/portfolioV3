@@ -13,7 +13,5 @@ export class BioComponent implements OnInit {
     this.bio = this.aboutmeData.bio;
   }
 
-  ngOnInit(): void {
-    console.log(this.bio);
-  }
+  ngOnInit(): void {}
 }

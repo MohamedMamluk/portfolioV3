@@ -13,7 +13,5 @@ export class EducationComponent implements OnInit {
     this.education = this.aboutMeService.education;
   }
 
-  ngOnInit(): void {
-    console.log(this.education);
-  }
+  ngOnInit(): void {}
 }

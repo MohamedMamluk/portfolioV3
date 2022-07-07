@@ -9,7 +9,9 @@ import { TapInfo } from 'src/app/Modules/tap-info';
 })
 export class MainComponent implements OnInit {
   taps: TapInfo[];
+  currentTap: string;
   constructor(private router: Router) {
+    this.currentTap = 'bio';
     this.taps = [
       {
         tapName: 'personal-info',
@@ -32,5 +34,8 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.navigateByUrl('about/personal/bio');
+  }
+  changeTap(value: string) {
+    this.currentTap = value;
   }
 }

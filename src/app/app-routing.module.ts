@@ -20,6 +20,13 @@ const routes: Routes = [
         (m) => m.ProjectsModule
       ),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('src/app/Components/contact/contact.module').then(
+        (m) => m.ContactModule
+      ),
+  },
 ];
 
 @NgModule({

@@ -9,6 +9,7 @@ import { SwiperModule } from 'swiper/angular';
 import { SwiperComponent } from './Components/home/swiper/swiper.component';
 import { HomeInfoComponent } from './Components/home/home-info/home-info.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     SwiperModule,
     NoopAnimationsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

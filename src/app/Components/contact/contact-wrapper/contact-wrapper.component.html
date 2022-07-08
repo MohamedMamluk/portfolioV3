@@ -1,0 +1,57 @@
+<main>
+  <h1 class="text-mainWhite text-lg ml-3 my-3 lg:hidden">_contact-me</h1>
+  <form [formGroup]="contactForm">
+    <div>
+      <label for="name" class="block">_name:</label>
+      <input
+        type="text"
+        name="name"
+        formControlName="name"
+        id="name"
+        class="outline-none border-mainGray rounded-lg bg-secondaryGray border"
+      />
+      <div *ngIf="name?.invalid && name?.touched">
+        <small *ngIf="name?.errors?.['required']" class="text-mainPink"
+          >Name is required</small
+        >
+        <small *ngIf="name?.errors?.['pattern']" class="text-mainPink"
+          >Name must be at least 3 letters.</small
+        >
+      </div>
+    </div>
+    <div>
+      <label for="email" class="block">_email:</label>
+      <input
+        type="email"
+        name="email"
+        formControlName="email"
+        id="email"
+        class="outline-none border-mainGray rounded-lg bg-secondaryGray border"
+      />
+      <div *ngIf="email?.invalid && email?.touched">
+        <small *ngIf="email?.errors?.['required']" class="text-mainPink"
+          >email is required</small
+        >
+        <small *ngIf="email?.errors?.['pattern']" class="text-mainPink"
+          >the email entered is not a valid email.</small
+        >
+      </div>
+    </div>
+    <div>
+      <label for="message" class="block">_message:</label>
+      <textarea
+        name="message"
+        formControlName="message"
+        id="message"
+        class="outline-none border-mainGray rounded-lg bg-secondaryGray border"
+      ></textarea>
+      <div *ngIf="message?.invalid && message?.touched">
+        <small *ngIf="message?.errors?.['required']" class="text-mainPink"
+          >message is required</small
+        >
+      </div>
+    </div>
+    <button type="submit">submit-message</button>
+  </form>
+  <div></div>
+</main>

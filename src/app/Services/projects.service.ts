@@ -9,6 +9,7 @@ export class ProjectsService {
   constructor() {
     this.projectsData = [
       {
+        id: 1,
         title: 'E-Mena',
         secondaryTitle: 'News',
         description:
@@ -27,6 +28,8 @@ export class ProjectsService {
         ],
       },
       {
+        id: 2,
+
         title: 'FindAndWatch',
         secondaryTitle: 'Movies-TV',
         description: 'Find information about the latest movies.',
@@ -43,6 +46,7 @@ export class ProjectsService {
         ],
       },
       {
+        id: 3,
         title: 'Comfy Sloth',
         secondaryTitle: 'online-store',
         description: 'An E-commerce website',
@@ -52,6 +56,7 @@ export class ProjectsService {
         libraries: ['NextJS', 'Styled Components', 'Redux'],
       },
       {
+        id: 4,
         title: 'RPS',
         secondaryTitle: 'game',
         description: 'A basic Rock Paper Scissors Game',
@@ -67,5 +72,8 @@ export class ProjectsService {
     return this.projectsData.filter(
       (project) => (project.mainFramework = filter)
     );
+  }
+  getProject(projectid: number) {
+    return this.projectsData.filter((project) => project.id === projectid);
   }
 }

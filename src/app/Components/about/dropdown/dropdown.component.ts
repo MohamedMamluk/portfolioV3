@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
-import { TapInfo } from 'src/app/Modules/tap-info';
+import { TapInfo } from 'src/app/Models/tap-info';
 
 @Component({
   selector: 'app-dropdown',

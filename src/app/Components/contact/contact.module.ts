@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ContactWrapperComponent } from './contact-wrapper/contact-wrapper.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormDataComponent } from './form-data/form-data.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { MatIconModule } from '@angular/material/icon';
 
 const routes: Routes = [
   {
@@ -11,7 +15,17 @@ const routes: Routes = [
   },
 ];
 @NgModule({
-  declarations: [ContactWrapperComponent],
-  imports: [CommonModule, RouterModule.forChild(routes), ReactiveFormsModule],
+  declarations: [
+    ContactWrapperComponent,
+    ContactFormComponent,
+    FormDataComponent,
+    DropdownComponent,
+  ],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    ReactiveFormsModule,
+    MatIconModule,
+  ],
 })
 export class ContactModule {}

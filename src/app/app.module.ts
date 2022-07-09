@@ -10,6 +10,7 @@ import { SwiperComponent } from './Components/home/swiper/swiper.component';
 import { HomeInfoComponent } from './Components/home/home-info/home-info.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SwiperModule,
     NoopAnimationsModule,
     ReactiveFormsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

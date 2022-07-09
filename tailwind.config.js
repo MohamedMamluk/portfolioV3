@@ -12,6 +12,7 @@ module.exports = {
         mainGray: "#607B96",
         mainOrange: "#FEA55F",
         secondaryGray: "#1E2D3D",
+        mainPurple: "#C98BDF",
       },
     },
   },

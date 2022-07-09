@@ -1,0 +1,17 @@
+<div
+  class="flex items-center pl-3 gap-2 py-2 text-mainWhite group cursor-pointer select-none border-b border-secondaryGray"
+  (click)="toggleTap()"
+>
+  <span class="transition-all" [ngClass]="{ 'rotate-90': tapOpen }">></span>
+  <p>contact-details</p>
+</div>
+<div class="ml-6 space-y-3" [ngClass]="{ hidden: !tapOpen }">
+  <a
+    href="mailto:mohamedmamlukali@gmail.com?body=Hello Mamluk,"
+    class="flex items-center gap-2"
+    ><mat-icon> email</mat-icon> mohamedmamlukali@gmail.com</a
+  >
+  <a href="tel:+201151751360" class="flex items-center gap-2"
+    ><mat-icon> phone</mat-icon> 201151751360</a
+  >
+</div>

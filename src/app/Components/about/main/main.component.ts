@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TapInfo } from 'src/app/Modules/tap-info';
+import { TapInfo } from 'src/app/Models/tap-info';
 
 @Component({
   selector: 'app-main',

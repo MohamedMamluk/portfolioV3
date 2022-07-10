@@ -1,0 +1,38 @@
+<main class="container mx-auto px-5 flex flex-col items-center">
+  <a
+    routerLink="/projects"
+    class="block w-max mt-4 bg-secondaryGray text-mainWhite px-4 py-2 rounded-md hover:bg-mainGray"
+    >go-back-to-projects</a
+  >
+  <div
+    class="flex flex-col lg:flex-row items-center lg:items-start gap-4 mt-5 space-y-5"
+  >
+    <div id="project-image" class="max-w-xl aspect-video">
+      <img [src]="project?.image" class="w-full h-full object-contain" />
+    </div>
+    <div id="project-info" class="max-w-xl">
+      <div id="project__info-main" class="space-y-2">
+        <h1 class="text-xl">
+          <span class="text-mainBlue">{{ project?.title }}</span>
+          <span class=""> //{{ project?.secondaryTitle }}</span>
+        </h1>
+        <p class="text-mainOrange text-base">{{ project?.description }}</p>
+        <div class="space-y-2">
+          <h2 class="text-mainGreen text-lg">Frameworks & libraries used:</h2>
+          <span
+            class="block text-mainPink"
+            *ngFor="let tech of project?.libraries"
+          >
+            {{ tech }}</span
+          >
+        </div>
+      </div>
+      <a
+        [href]="project?.link"
+        target="_blank"
+        class="block w-max mt-4 bg-secondaryGray text-mainWhite px-4 py-2 rounded-md hover:bg-mainGray"
+        >visit-project</a
+      >
+    </div>
+  </div>
+</main>

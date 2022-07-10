@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './Components/home/home.component';
+import { ProjectPageComponent } from './Components/Projects/project-page/project-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,6 +20,10 @@ const routes: Routes = [
       import('src/app/Components/Projects/projects.module').then(
         (m) => m.ProjectsModule
       ),
+  },
+  {
+    path: 'projects/:id',
+    component: ProjectPageComponent,
   },
   {
     path: 'contact',

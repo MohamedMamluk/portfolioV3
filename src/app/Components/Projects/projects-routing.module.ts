@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,8 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       // {
-      //   path: 'vue',
-      //   component: VueComponent,
+      //   path: 'project/:id',
+      //   component: ProjectPageComponent,
       // },
     ],
   },

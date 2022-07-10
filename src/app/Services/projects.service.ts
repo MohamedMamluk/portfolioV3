@@ -74,6 +74,6 @@ export class ProjectsService {
     );
   }
   getProject(projectid: number) {
-    return this.projectsData.filter((project) => project.id === projectid);
+    return this.projectsData.find((project) => project.id === projectid);
   }
 }

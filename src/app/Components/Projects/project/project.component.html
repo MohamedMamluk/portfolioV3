@@ -27,12 +27,19 @@
         {{ projectData.description.slice(0, 65) }}
         <span *ngIf="projectData.description.length > 65">...</span>
       </p>
-      <a
-        [href]="projectData.link"
-        class="bg-secondaryGray text-mainWhite p-2 rounded-md"
-        target="_blank"
-        >view-project</a
-      >
+      <div class="flex justify-between w-full">
+        <a
+          [href]="projectData.link"
+          class="bg-secondaryGray text-mainWhite p-2 rounded-md"
+          target="_blank"
+          >view-project</a
+        >
+        <a
+          routerLink="/projects/{{ projectData.id }}"
+          class="bg-secondaryGray text-mainWhite p-2 rounded-md"
+          >more-details</a
+        >
+      </div>
     </div>
   </div>
 </div>

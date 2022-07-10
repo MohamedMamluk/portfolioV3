@@ -11,6 +11,7 @@ import { HomeInfoComponent } from './Components/home/home-info/home-info.compone
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
     HomeComponent,
     SwiperComponent,
     HomeInfoComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

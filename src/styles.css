@@ -83,3 +83,6 @@
     background-position: right;
   }
 }
+.button-hover {
+  @apply transition-all hover:text-secondaryGray hover:bg-mainWhite;
+}

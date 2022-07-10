@@ -5,7 +5,7 @@
   </div>
   <div
     id="project-content"
-    class="h-[90%] border border-secondaryGray bg-[#011221] rounded-lg overflow-hidden"
+    class="h-[90%] border border-secondaryGray bg-[#011221] rounded-lg overflow-hidden hover:scale-105 transition-all"
   >
     <div id="project-image" class="h-1/2 rounded-lg relative">
       <img
@@ -30,13 +30,13 @@
       <div class="flex justify-between w-full">
         <a
           [href]="projectData.link"
-          class="bg-secondaryGray text-mainWhite p-2 rounded-md"
+          class="bg-secondaryGray text-mainWhite p-2 rounded-md button-hover"
           target="_blank"
           >view-project</a
         >
         <a
           routerLink="/projects/{{ projectData.id }}"
-          class="bg-secondaryGray text-mainWhite p-2 rounded-md"
+          class="bg-secondaryGray text-mainWhite p-2 rounded-md button-hover"
           >more-details</a
         >
       </div>

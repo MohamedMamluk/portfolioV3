@@ -8,13 +8,15 @@ export class AboutMeService {
   aboutme: AboutMe;
 
   constructor() {
+    // bio: ` I am Mohamed Mamluk, 25 years old, I am a Full-stack web developer, Most of
+    // the time I use React and NextJS, but lately I learned Angular and I fell
+    // in love with it, I keep in touch with new technologies and trends, I am
+    // currently doing some voluntary work for
+    // TEDx Youth  in my area, but
+    // I am open to work`,
     this.aboutme = {
-      bio: ` I am Mohamed Mamluk, 25 years old, I am a front-end web developer, Most of
-      the time I use React and NextJS, but lately I learned Angular and I fell
-      in love with it, I keep in touch with new technologies and trends, I am
-      currently doing some voluntary work for
-      TEDx Youth  in my area, but
-      I am open to work`,
+      bio: `I am Mohamed Mamluk, a 25-year-old Full-stack web developer with experience in a variety of web technologies, My primary focus has been on React and NextJS, but I recently learned Angular and have fallen in love with it, I keep up-to-date with new technologies and trends, and I'm always eager to learn more,
+ I'm also open to new professional opportunities. As a Full-stack developer, I have experience with both front-end and back-end technologies, including HTML - CSS - JavaScript - TypeScript - React - Angular - Node.js - Nestjs - and MongoDB, I enjoy working on both the client and server-side of web applications, and am passionate about creating efficient and user-friendly web experiences.`,
       education: [
         {
           educationType:

@@ -17,6 +17,15 @@ export class AboutMeService {
       I am open to work`,
       education: [
         {
+          educationType:
+            'Web development using MEARN stack - Intensive Training Program',
+          place: 'ITI Cairo University branch',
+          duration: {
+            from: 'November 2022',
+            to: 'March 2023',
+          },
+        },
+        {
           educationType: 'Web development using Angular',
           place: 'ITI Material',
           duration: {
